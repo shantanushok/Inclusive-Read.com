@@ -1,0 +1,76 @@
+{
+  "placeholderImages": [
+    {
+      "id": "hero-image",
+      "description": "A browser window showing the InclusiveRead extension enhancing a webpage.",
+      "imageUrl": "https://images.unsplash.com/photo-1655196601100-8bfb26cf99e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxicm93c2VyJTIwZXh0ZW5zaW9ufGVufDB8fHx8MTc2Nzk1MjIwM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "browser extension"
+    },
+    {
+      "id": "feature-font",
+      "description": "A demonstration of font customization options in InclusiveRead.",
+      "imageUrl": "https://picsum.photos/seed/11/600/400",
+      "imageHint": "font settings"
+    },
+    {
+      "id": "feature-tts",
+      "description": "The text-to-speech player bar from InclusiveRead.",
+      "imageUrl": "https://images.unsplash.com/photo-1503227770247-8340b5c2b759?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzcGVlY2glMjBhdWRpb3xlbnwwfHx8fDE3Njc5NTIyMDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "speech audio"
+    },
+    {
+      "id": "feature-color",
+      "description": "The color adjustment panel in InclusiveRead for changing contrast and themes.",
+      "imageUrl": "https://images.unsplash.com/photo-1589566983471-a0e73071c282?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjb2xvciUyMHBhbGV0dGV8ZW58MHx8fHwxNzY3OTUyMjAzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "color palette"
+    },
+    {
+      "id": "feature-reader",
+      "description": "An article viewed in InclusiveRead's clutter-free reader mode.",
+      "imageUrl": "https://images.unsplash.com/photo-1515806632622-e6b9358ef804?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxyZWFkZXIlMjBtb2RlfGVufDB8fHx8MTc2Nzk1MjIwM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "reader mode"
+    },
+    {
+      "id": "install-step-1",
+      "description": "Navigating to the browser's extension store.",
+      "imageUrl": "https://images.unsplash.com/photo-1603515161074-3206aaeb03f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhcHAlMjBzdG9yZXxlbnwwfHx8fDE3Njc5NTIyMDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "app store"
+    },
+    {
+      "id": "install-step-2",
+      "description": "Clicking the 'Add to Browser' button.",
+      "imageUrl": "https://images.unsplash.com/photo-1699040309386-11c615ed64d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxhZGQlMjBidXR0b258ZW58MHx8fHwxNzY3OTUyMjAzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "add button"
+    },
+    {
+      "id": "install-step-3",
+      "description": "Confirmation dialog showing the extension has been successfully installed.",
+      "imageUrl": "https://images.unsplash.com/photo-1687787416048-d7acdd89bfc3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzdWNjZXNzJTIwY2hlY2ttYXJrfGVufDB8fHx8MTc2Nzk1MjIwM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "success checkmark"
+    },
+    {
+      "id": "tutorial-step-1",
+      "description": "A person signing up on a website.",
+      "imageUrl": "https://images.unsplash.com/photo-1589561253898-768105ca91a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzaWduJTIwdXB8ZW58MHx8fHwxNzY3OTU1MDIyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "sign up"
+    },
+    {
+      "id": "tutorial-step-2",
+      "description": "An API key being generated on a dashboard.",
+      "imageUrl": "https://images.unsplash.com/photo-1594033943559-12a3b21f719d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhcGklMjBrZXl8ZW58MHx8fHwxNzY3OTU1MDIyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "api key"
+    },
+    {
+      "id": "tutorial-step-3",
+      "description": "Entering an API key into the extension panel.",
+      "imageUrl": "https://images.unsplash.com/photo-1722966575769-466d4cc00676?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxleHRlbnNpb24lMjBhY3RpdmF0aW9ufGVufDB8fHx8MTc2Nzk1NTAyMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "extension activation"
+    },
+    {
+      "id": "tutorial-step-4",
+      "description": "A person happily using the features of the extension.",
+      "imageUrl": "https://images.unsplash.com/photo-1750535135659-7a0c8878a8fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxoYXBweSUyMHVzZXJ8ZW58MHx8fHwxNzY3OTU1MDIyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "happy user"
+    }
+  ]
+}
