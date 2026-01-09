@@ -1,5 +1,1 @@
-# Firebase Studio
-
-This is a NextJS starter in Firebase Studio.
-
-To get started, take a look at src/app/page.tsx.
+This website acts as a Support as well Tutorial guide for our main project InclusiveRead which is a chrome extension to make websites more accessible to the Neuro-Divergent community .....
