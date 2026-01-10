@@ -10,9 +10,6 @@ export function Footer() {
             <BookOpen className="h-6 w-6 text-primary" />
             <span className="font-bold text-lg">InclusiveRead Hub</span>
           </div>
-          <p className="text-sm text-muted-foreground">
-            &copy; {new Date().getFullYear()} InclusiveRead Hub. All rights reserved.
-          </p>
           <div className="flex gap-4">
             <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">Privacy Policy</Link>
             <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">Terms of Service</Link>
