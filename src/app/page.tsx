@@ -51,6 +51,10 @@ export default function Home() {
   const tutorialStep2Image = getImage("tutorial-step-2");
   const tutorialStep3Image = getImage("tutorial-step-3");
   const tutorialStep4Image = getImage("tutorial-step-4");
+  const showcase1Image = getImage("showcase-1");
+  const showcase2Image = getImage("showcase-2");
+  const showcase3Image = getImage("showcase-3");
+  const showcase4Image = getImage("showcase-4");
 
   const features = [
     {
@@ -83,7 +87,7 @@ export default function Home() {
     {
       icon: <KeyRound className="w-8 h-8 text-primary" />,
       title: "Get Your Free API Key",
-      description: "Visit OpenRouter to create a free API key. Ensure your billing/credit limit is set to zero.",
+      description: " Visit Google AI Studio in order to create a free API key . You can also visit OpenRouter to create a free API key , ensure your billing/credit limit is set to zero.",
       image: tutorialStep2Image,
     },
     {
@@ -283,6 +287,76 @@ export default function Home() {
                   </div>
                 ))}
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Extension Showcase Section */}
+        <section id="showcase" className="py-20 sm:py-24">
+          <div className="container mx-auto px-4">
+            <div className="text-center max-w-3xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-bold">See InclusiveRead in Action</h2>
+              <p className="mt-4 text-muted-foreground">
+                Take a closer look at how our extension transforms your browsing experience.
+              </p>
+            </div>
+            <div className="mt-16 grid md:grid-cols-2 gap-8">
+              {showcase1Image && (
+                <div className="relative aspect-video rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                  <Image
+                    src={showcase1Image.imageUrl}
+                    alt={showcase1Image.description}
+                    data-ai-hint={showcase1Image.imageHint}
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                    <p className="text-white font-medium">{showcase1Image.description}</p>
+                  </div>
+                </div>
+              )}
+              {showcase2Image && (
+                <div className="relative aspect-video rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                  <Image
+                    src={showcase2Image.imageUrl}
+                    alt={showcase2Image.description}
+                    data-ai-hint={showcase2Image.imageHint}
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                    <p className="text-white font-medium">{showcase2Image.description}</p>
+                  </div>
+                </div>
+              )}
+              {showcase3Image && (
+                <div className="relative aspect-video rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                  <Image
+                    src={showcase3Image.imageUrl}
+                    alt={showcase3Image.description}
+                    data-ai-hint={showcase3Image.imageHint}
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                    <p className="text-white font-medium">{showcase3Image.description}</p>
+                  </div>
+                </div>
+              )}
+              {showcase4Image && (
+                <div className="relative aspect-video rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                  <Image
+                    src={showcase4Image.imageUrl}
+                    alt={showcase4Image.description}
+                    data-ai-hint={showcase4Image.imageHint}
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                    <p className="text-white font-medium">{showcase4Image.description}</p>
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         </section>

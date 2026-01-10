@@ -71,6 +71,30 @@
       "description": "A person happily using the features of the extension.",
       "imageUrl": "https://images.unsplash.com/photo-1750535135659-7a0c8878a8fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxoYXBweSUyMHVzZXJ8ZW58MHx8fHwxNzY3OTU1MDIyfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "happy user"
+    },
+    {
+      "id": "showcase-1",
+      "description": "Extension popup showing accessibility controls and settings.",
+      "imageUrl": "/showcase/screenshot1.png",
+      "imageHint": "extension popup interface"
+    },
+    {
+      "id": "showcase-2",
+      "description": "Webpage displaying with OpenDyslexic font activated.",
+      "imageUrl": "/showcase/screenshot2.png",
+      "imageHint": "reading webpage"
+    },
+    {
+      "id": "showcase-3",
+      "description": "Text-to-speech feature in action with audio controls visible.",
+      "imageUrl": "/showcase/screenshot3.png",
+      "imageHint": "audio controls"
+    },
+    {
+      "id": "showcase-4",
+      "description": "Color adjustment panel showing different theme options.",
+      "imageUrl": "/showcase/screenshot4.png",
+      "imageHint": "theme settings"
     }
   ]
 }
