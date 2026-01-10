@@ -77,6 +77,6 @@ temp/
 
 # output artifacts
 *.tar.gz
-*.zip
+
 
 .vercel
