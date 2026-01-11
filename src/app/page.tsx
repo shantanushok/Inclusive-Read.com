@@ -297,6 +297,31 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Video Tutorial Section */}
+        <section className="py-20 sm:py-24 bg-muted/50">
+          <div className="container mx-auto px-4">
+            <div className="text-center max-w-3xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-bold">Installation Video Guide</h2>
+              <p className="mt-4 text-muted-foreground">
+                Watch this step-by-step video tutorial to see exactly how to install and set up InclusiveRead.
+              </p>
+            </div>
+            <div className="mt-12 max-w-4xl mx-auto">
+              <div className="aspect-video rounded-xl overflow-hidden shadow-2xl">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/tx070GlMrvE"
+                  title="InclusiveRead Installation Guide"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                  className="w-full h-full"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Extension Showcase Section */}
         <section id="showcase" className="py-20 sm:py-24">
           <div className="container mx-auto px-4">
