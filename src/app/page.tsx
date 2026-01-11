@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import {
   Accordion,
@@ -25,6 +28,7 @@ import {
   Code,
   Upload,
   FileCheck,
+  X,
 } from "lucide-react";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
@@ -39,6 +43,8 @@ const FirefoxIcon = (props: React.SVGProps<SVGSVGElement>) => (
 )
 
 export default function Home() {
+  const [selectedImage, setSelectedImage] = useState<ImagePlaceholder | null>(null);
+
   const heroImage = getImage("hero-image");
   const featureFontImage = getImage("feature-font");
   const featureTtsImage = getImage("feature-tts");
@@ -302,7 +308,10 @@ export default function Home() {
             </div>
             <div className="mt-16 grid md:grid-cols-2 gap-8">
               {showcase1Image && (
-                <div className="relative aspect-video rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                <div 
+                  onClick={() => setSelectedImage(showcase1Image)}
+                  className="relative aspect-video rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300 cursor-pointer"
+                >
                   <Image
                     src={showcase1Image.imageUrl}
                     alt={showcase1Image.description}
@@ -316,7 +325,10 @@ export default function Home() {
                 </div>
               )}
               {showcase2Image && (
-                <div className="relative aspect-video rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                <div 
+                  onClick={() => setSelectedImage(showcase2Image)}
+                  className="relative aspect-video rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300 cursor-pointer"
+                >
                   <Image
                     src={showcase2Image.imageUrl}
                     alt={showcase2Image.description}
@@ -330,7 +342,10 @@ export default function Home() {
                 </div>
               )}
               {showcase3Image && (
-                <div className="relative aspect-video rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                <div 
+                  onClick={() => setSelectedImage(showcase3Image)}
+                  className="relative aspect-video rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300 cursor-pointer"
+                >
                   <Image
                     src={showcase3Image.imageUrl}
                     alt={showcase3Image.description}
@@ -344,7 +359,10 @@ export default function Home() {
                 </div>
               )}
               {showcase4Image && (
-                <div className="relative aspect-video rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                <div 
+                  onClick={() => setSelectedImage(showcase4Image)}
+                  className="relative aspect-video rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300 cursor-pointer"
+                >
                   <Image
                     src={showcase4Image.imageUrl}
                     alt={showcase4Image.description}
@@ -360,6 +378,38 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* Image Modal */}
+        {selectedImage && (
+          <div 
+            className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4"
+            onClick={() => setSelectedImage(null)}
+          >
+            <button
+              onClick={() => setSelectedImage(null)}
+              className="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors z-50"
+              aria-label="Close modal"
+            >
+              <X className="w-8 h-8" />
+            </button>
+            <div 
+              className="relative max-w-7xl max-h-[90vh] w-full h-full flex items-center justify-center"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <Image
+                src={selectedImage.imageUrl}
+                alt={selectedImage.description}
+                data-ai-hint={selectedImage.imageHint}
+                width={1920}
+                height={1080}
+                className="max-w-full max-h-full object-contain rounded-lg"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 rounded-b-lg">
+                <p className="text-white text-lg font-medium text-center">{selectedImage.description}</p>
+              </div>
+            </div>
+          </div>
+        )}
       </main>
       <Footer />
     </div>
