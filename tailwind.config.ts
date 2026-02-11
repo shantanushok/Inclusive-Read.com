@@ -10,10 +10,10 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        body: ['Inter', 'system-ui', 'sans-serif'],
-        headline: ['Inter', 'system-ui', 'sans-serif'],
-        editorial: ['"Playfair Display"', 'Georgia', 'serif'],
-        code: ['monospace'],
+        body: ['"Comic Sans MS"', '"Comic Sans"', 'cursive', 'sans-serif'],
+        headline: ['"Comic Sans MS"', '"Comic Sans"', 'cursive', 'sans-serif'],
+        editorial: ['"Comic Sans MS"', '"Comic Sans"', 'cursive', 'sans-serif'],
+        code: ['"Comic Sans MS"', '"Comic Sans"', 'cursive', 'monospace'],
       },
       colors: {
         background: 'hsl(var(--background))',

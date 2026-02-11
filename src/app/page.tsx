@@ -240,7 +240,7 @@ export default function Home() {
         <section
           ref={heroRef}
           id="overview"
-          className="relative min-h-screen flex items-center overflow-hidden pt-24"
+          className="relative min-h-[85vh] flex items-center overflow-hidden pt-20 pb-12"
         >
           {/* Background — single soft gradient orb, nothing else */}
           <div className="absolute top-[-20%] right-[-10%] w-[700px] h-[700px] bg-gradient-to-br from-primary/[0.06] via-primary/[0.02] to-transparent rounded-full blur-[100px] pointer-events-none" />
@@ -250,7 +250,7 @@ export default function Home() {
             style={{ y: heroY, opacity: heroOpacity }}
             className="relative z-10 container mx-auto px-6 lg:px-12 w-full"
           >
-            <div className="grid lg:grid-cols-2 gap-16 lg:gap-20 items-center min-h-[calc(100vh-6rem)]">
+            <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center min-h-[calc(85vh-8rem)]">
               {/* Left — Text content */}
               <div className="max-w-2xl">
 
@@ -259,7 +259,7 @@ export default function Home() {
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.9, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
-                  className="mt-8 text-[clamp(2.8rem,6vw,5.5rem)] font-bold tracking-[-0.035em] leading-[1.05]"
+                  className="mt-4 text-[clamp(2.8rem,6vw,5.5rem)] font-bold tracking-[-0.035em] leading-[1.05]"
                 >
                   The web,
                   <br />
@@ -275,7 +275,7 @@ export default function Home() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.6 }}
-                  className="mt-7 text-[15px] md:text-base text-white/40 leading-[1.75] max-w-lg"
+                  className="mt-5 text-lg md:text-xl text-white/40 leading-[1.75] max-w-lg"
                 >
                   A Chrome extension for people with ADHD, Autism, Dyslexia &amp; other
                   neurodivergent conditions. Reduce sensory overload, customize
@@ -287,7 +287,7 @@ export default function Home() {
                   initial={{ opacity: 0, y: 15 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.75 }}
-                  className="mt-6 flex flex-wrap gap-2"
+                  className="mt-4 flex flex-wrap gap-2"
                 >
                   {[
                     { label: "ADHD", color: "#a855f7" },
@@ -321,7 +321,7 @@ export default function Home() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.9 }}
-                  className="mt-10 flex flex-wrap items-center gap-4"
+                  className="mt-8 flex flex-wrap items-center gap-4"
                 >
                   <a
                     href="/extension.zip"
@@ -414,7 +414,7 @@ export default function Home() {
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.8 }}
-                className="lg:hidden mt-12 -mb-8"
+                className="lg:hidden mt-8 -mb-8"
               >
                 <div className="relative rounded-2xl overflow-hidden border border-white/[0.06]">
                   <Image
@@ -451,11 +451,11 @@ export default function Home() {
         {/* ═══════════════════════════════════════════
             NEURODIVERGENT AUDIENCE SECTION
         ═══════════════════════════════════════════ */}
-        <section className="relative py-32 sm:py-40">
+        <section className="relative py-24 sm:py-28">
           <div className="section-line" />
-          <div className="container mx-auto px-6 lg:px-12 pt-20">
+          <div className="container mx-auto px-6 lg:px-12 pt-16">
             {/* Section header */}
-            <div className="text-center max-w-3xl mx-auto mb-20">
+            <div className="text-center max-w-3xl mx-auto mb-16">
               <motion.span
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -484,7 +484,7 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className="mt-8 text-white/40 text-sm leading-relaxed max-w-lg mx-auto"
+                className="mt-8 text-white/40 text-lg leading-relaxed max-w-lg mx-auto"
               >
                 15–20% of the world&apos;s population is neurodivergent. The web wasn&apos;t
                 designed for them — but InclusiveRead makes it work.
@@ -492,7 +492,7 @@ export default function Home() {
             </div>
 
             {/* Audience cards */}
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-7xl mx-auto">
               {audienceCards.map((card, index) => (
                 <motion.div
                   key={card.condition}
@@ -505,7 +505,7 @@ export default function Home() {
                     ease: [0.22, 1, 0.36, 1],
                   }}
                   whileHover={{ y: -5, transition: { duration: 0.25 } }}
-                  className="relative rounded-2xl border border-white/[0.06] bg-white/[0.02] p-6 flex flex-col group cursor-default overflow-hidden transition-all duration-400"
+                  className="relative rounded-2xl border border-white/[0.06] bg-white/[0.02] p-7 flex flex-col group cursor-default overflow-hidden transition-all duration-400"
                 >
                   {/* Top accent glow line */}
                   <div
@@ -520,22 +520,22 @@ export default function Home() {
                   />
 
                   {/* Stat — large, prominent */}
-                  <div className="mb-5">
+                  <div className="mb-6">
                     <span
-                      className="text-4xl md:text-[2.75rem] font-bold tracking-[-0.03em] leading-none"
+                      className="text-5xl md:text-[3.25rem] font-bold tracking-[-0.03em] leading-none"
                       style={{ color: card.accent }}
                     >
                       {card.stat}
                     </span>
-                    <p className="text-white/25 text-[11px] mt-1.5 leading-snug">
+                    <p className="text-white/25 text-xs mt-2 leading-snug">
                       {card.statLabel}
                     </p>
                   </div>
 
                   {/* Condition + icon */}
-                  <div className="flex items-center gap-2.5 mb-3">
+                  <div className="flex items-center gap-2.5 mb-4">
                     <div
-                      className="flex items-center justify-center w-7 h-7 rounded-lg"
+                      className="flex items-center justify-center w-8 h-8 rounded-lg"
                       style={{
                         backgroundColor: `${card.accent}12`,
                         color: card.accent,
@@ -543,18 +543,18 @@ export default function Home() {
                     >
                       {card.icon}
                     </div>
-                    <h3 className="text-[15px] font-semibold tracking-tight">
+                    <h3 className="text-base font-semibold tracking-tight">
                       {card.condition}
                     </h3>
                   </div>
 
                   {/* Description */}
-                  <p className="text-white/30 text-[13px] leading-[1.65] flex-1">
+                  <p className="text-white/30 text-base leading-[1.7] flex-1">
                     {card.description}
                   </p>
 
                   {/* Tagline dot */}
-                  <div className="mt-5 pt-4 border-t border-white/[0.04] flex items-center gap-2">
+                  <div className="mt-6 pt-5 border-t border-white/[0.04] flex items-center gap-2">
                     <span
                       className="w-1.5 h-1.5 rounded-full"
                       style={{ backgroundColor: card.accent }}
@@ -608,7 +608,7 @@ export default function Home() {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="md:col-span-5"
               >
-                <p className="text-white/40 text-sm leading-relaxed max-w-md">
+                <p className="text-white/40 text-lg leading-relaxed max-w-md">
                   Each feature is purpose-built for neurodivergent needs reducing sensory overload, improving readability, and making complex content accessible.
                 </p>
               </motion.div>
@@ -658,7 +658,7 @@ export default function Home() {
                       Helps: {feature.helpsWith}
                     </span>
                   )}
-                  <p className="text-white/40 text-sm leading-relaxed max-w-md">
+                  <p className="text-white/40 text-base leading-relaxed max-w-md">
                     {feature.description}
                   </p>
 
@@ -709,7 +709,7 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className="mt-8 text-white/40 text-sm leading-relaxed max-w-lg mx-auto"
+                className="mt-8 text-white/40 text-lg leading-relaxed max-w-lg mx-auto"
               >
                 Unleash the full potential of your reading experience in a few
                 simple steps.
@@ -741,7 +741,7 @@ export default function Home() {
                       <h3 className="text-2xl md:text-3xl font-semibold tracking-tight mb-4">
                         {step.title}
                       </h3>
-                      <p className="text-white/40 text-sm leading-relaxed max-w-sm">
+                      <p className="text-white/40 text-base leading-relaxed max-w-sm">
                         {step.description}
                       </p>
                     </div>
@@ -808,7 +808,7 @@ export default function Home() {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="md:col-span-5"
               >
-                <p className="text-white/40 text-sm leading-relaxed max-w-md">
+                <p className="text-white/40 text-lg leading-relaxed max-w-md">
                   Get started with InclusiveRead in just a few simple steps.
                   Follow along and you'll be up and running in no time.
                 </p>
@@ -850,7 +850,7 @@ export default function Home() {
                         <h3 className="text-xl font-semibold tracking-tight mb-2">
                           {step.title}
                         </h3>
-                        <p className="text-white/40 text-sm leading-relaxed">
+                        <p className="text-white/40 text-base leading-relaxed">
                           {step.description}
                         </p>
                       </div>
@@ -922,7 +922,7 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className="mt-8 text-white/40 text-sm leading-relaxed max-w-lg mx-auto"
+                className="mt-8 text-white/40 text-lg leading-relaxed max-w-lg mx-auto"
               >
                 Watch this step-by-step video tutorial to see exactly how to
                 install and set up InclusiveRead.
@@ -989,7 +989,7 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className="mt-8 text-white/40 text-sm leading-relaxed max-w-lg mx-auto"
+                className="mt-8 text-white/40 text-lg leading-relaxed max-w-lg mx-auto"
               >
                 Take a closer look at how our extension transforms your
                 browsing experience.
@@ -1155,7 +1155,7 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className="mt-8 text-white/40 text-base leading-relaxed max-w-lg mx-auto"
+                className="mt-8 text-white/40 text-lg leading-relaxed max-w-lg mx-auto"
               >
                 Join thousands of neurodivergent users who have transformed their
                 browsing experience. Free, open-source, and built with empathy.

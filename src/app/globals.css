@@ -4,25 +4,25 @@
 
 @layer base {
   :root {
-    --background: 0 0% 4%;
-    --foreground: 0 0% 96%;
-    --card: 0 0% 7%;
-    --card-foreground: 0 0% 96%;
-    --popover: 0 0% 7%;
-    --popover-foreground: 0 0% 96%;
-    --primary: 36 100% 55%;
-    --primary-foreground: 0 0% 4%;
-    --secondary: 0 0% 12%;
-    --secondary-foreground: 0 0% 96%;
-    --muted: 0 0% 12%;
-    --muted-foreground: 0 0% 55%;
-    --accent: 155 60% 45%;
-    --accent-foreground: 0 0% 4%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 20% 98%;
-    --border: 0 0% 14%;
-    --input: 0 0% 14%;
-    --ring: 36 100% 55%;
+    --background: 0 0% 96%;
+    --foreground: 0 0% 20%;
+    --card: 0 0% 98%;
+    --card-foreground: 0 0% 20%;
+    --popover: 0 0% 98%;
+    --popover-foreground: 0 0% 20%;
+    --primary: 0 0% 70%;
+    --primary-foreground: 0 0% 20%;
+    --secondary: 0 0% 90%;
+    --secondary-foreground: 0 0% 20%;
+    --muted: 0 0% 88%;
+    --muted-foreground: 0 0% 45%;
+    --accent: 0 0% 75%;
+    --accent-foreground: 0 0% 20%;
+    --destructive: 0 50% 70%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 85%;
+    --input: 0 0% 85%;
+    --ring: 0 0% 70%;
     --radius: 0.75rem;
   }
 }
@@ -43,7 +43,7 @@
 
 /* ===== Typography ===== */
 .font-editorial {
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
 }
 
 /* ===== Gradient & Glow Effects ===== */
@@ -130,15 +130,15 @@
   height: 1px;
   background: linear-gradient(90deg,
       transparent 0%,
-      rgba(255, 255, 255, 0.06) 20%,
-      rgba(255, 255, 255, 0.06) 80%,
+      rgba(100, 100, 100, 0.15) 20%,
+      rgba(100, 100, 100, 0.15) 80%,
       transparent 100%);
 }
 
 /* ===== Subtle grid background ===== */
 .dot-grid {
   background-image: radial-gradient(circle,
-      rgba(255, 255, 255, 0.03) 1px,
+      rgba(100, 100, 100, 0.08) 1px,
       transparent 1px);
   background-size: 32px 32px;
 }
@@ -149,29 +149,29 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #0a0a0a;
+  background: #f5f5f0;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(100, 100, 100, 0.3);
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(100, 100, 100, 0.5);
 }
 
 /* ===== Number label ===== */
 .step-number {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
   font-style: italic;
-  color: rgba(255, 255, 255, 0.2);
+  color: rgba(100, 100, 100, 0.3);
 }
 
 /* ===== Custom selection ===== */
 ::selection {
-  background: rgba(232, 168, 56, 0.3);
-  color: white;
+  background: rgba(180, 180, 170, 0.4);
+  color: #333;
 }
 
 /* ===== Audience cards ===== */
